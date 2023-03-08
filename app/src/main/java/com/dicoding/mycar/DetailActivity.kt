@@ -2,6 +2,7 @@ package com.dicoding.mycar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 
 class DetailActivity : AppCompatActivity() {
@@ -24,5 +25,14 @@ class DetailActivity : AppCompatActivity() {
         tvRoles.text = carRoles
         tvPhoto.setBackgroundResource(carPhoto)
 
+        val actionbar = supportActionBar
+        actionbar!!.title = carBrand
+        actionbar.setDisplayHomeAsUpEnabled(true)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }

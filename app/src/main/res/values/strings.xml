@@ -3,4 +3,6 @@
     <string name="cars_brand">Brand Mobil</string>
     <string name="detail">Detail</string>
     <string name="role">Role</string>
+    <string name="choose">Pilih Mobil</string>
+
 </resources>
